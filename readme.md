@@ -14,7 +14,7 @@ _https://github.com/assassin56/friday_project4_
 ## SPEC Sheet
 
 * Pizza-size options are displayed
-   * Input: submit-function for user's size
+   * Input: _submit-button_ for user's size
    * Output: Pizza-size is stored.
 * Pizza-topping options are displayed as select-boxes.
    * Input: Upon user _click_.
