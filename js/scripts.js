@@ -5,6 +5,7 @@ function Pizza(size, topping) {
   this.topping = topping;
 }
 
+
 // proto. for pushing size //
 Pizza.prototype.chosenSize = function(size) {
   this.size.push(size);
@@ -19,8 +20,12 @@ Pizza.prototype.chosenToppings = function(topping) {
 ////////// Front-End //////////
 
 $(document).ready(function () {
-  var usersPizza = new Pizza();
   $("form#size").submit(function(event) {
     event.preventDefault();
-  })
+    var selectedSize = $("select#size").val();
+    $("input:checkbox:checked").each(function() {
+      var selectedToppings = $(this).val();
+      console.log(chosenToppings);
+    })
+  })  
 })
