@@ -47,20 +47,3 @@ $(document).ready(function() {
     $("#output").text(totalCost);
   })
 })
-
-
-
- 
-  //   $("form#One").submit(function(event) {
-//     event.preventDefault();
-//     $("input:checkbox:checked").each(function() {
-//       var selectedToppings = $(this).val();
-//       usersPizza.chosenToppings(selectedToppings);
-//     })
-//     var selectedSize = $("select#size").val();
-//     console.log(selectedSize);
-//     var usersPizza = new Pizza(size, topping)
-//     usersPizza.chosenSize(selectedSize);
-//     console.log(usersPizza);
-//   })
-// })
