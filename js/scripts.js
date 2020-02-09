@@ -6,7 +6,6 @@ function Pizza(size, toppings) {
   this.cost = 0
 }
 
-//
 Pizza.prototype.chosenToppings = function(topping) {
   this.topping.push(topping);
 }

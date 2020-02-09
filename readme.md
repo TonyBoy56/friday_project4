@@ -44,7 +44,7 @@ _https://github.com/assassin56/friday_project4_
 
 ## Known Bugs
 
-_Does not yet return a total price_
+_N/A_
 
 ## Support and contact details
 
@@ -58,7 +58,7 @@ _codrocks.cruz3@gmail.com_
 * _HTML_
 * _Bootstrap_
 * _Git_
-* _JQuery_
+* _jQuery_
 * _JavaScript_
 
 ### License
