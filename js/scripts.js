@@ -1,33 +1,35 @@
 ////////// Back-End //////////
-// Pizza Constr. //
-function Pizza(size, topping) {
-  this.size = size;
-  this.topping = topping;
+
+function Pizza(size, toppings) {
+  this.size = size,
+  this.toppings = toppings,
+  this.cost = 0
 }
 
+//
 Pizza.prototype.chosenToppings = function(topping) {
   this.topping.push(topping);
 }
 
-Pizza.prototype.cost = function() {
-  var cost = 0;
+Pizza.prototype.addCost = function() {
   if(this.size === "1") {
-    cost = cost + 5;
+    this.cost += 5;
   } else if(this.size === "2") {
-    cost = cost + 8;
+    this.cost += 8;
   } else if(this.size === "3") {
-    cost = cost + 11;
-  };
+    this.cost += 11;
+  }
 
-  if (this.topping.includes("m1", "m2", "m3", "m4", "m5")) {
+  if (this.topping === "m1") {
     cost += 2;
   };
-  if (this.topping.includes("v1", "v2", "v3", "v4", "v5", "v6")) {
+  if (this.topping === "v1") {
     cost += 2;
   }
-  if (this.topping.includes("c1", "c2", "c3", "c4", "c5")) {
+  if (this.topping === "c1") {
     cost += 2;
-  };
+  }
+  return this.cost;
 }
 
 
@@ -36,14 +38,14 @@ Pizza.prototype.cost = function() {
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
-    var usersToppings = []
-    var usersSize = $("select:[name=size]:checked").val();
+    var usersToppings = [];
+    var usersSize = $("[name=size]").val();
     var usersPizza = new Pizza(usersSize, usersToppings);
     $("input:checkbox[name=topping]:checked").each(function() {
       var selectedToppings = $(this).val();
-      usersPizza.cost(selectedToppings);
+      usersPizza.addCost(selectedToppings);
     });
-    var totalCost = usersPizza.cost();
+    var totalCost = usersPizza.addCost();
     $("#output").text(totalCost);
-  })
-})
+  });
+});
