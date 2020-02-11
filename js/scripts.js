@@ -1,5 +1,4 @@
 ////////// Back-End //////////
-
 function Pizza(size, toppings) {
   this.size = size,
   this.toppings = toppings,
@@ -33,7 +32,6 @@ Pizza.prototype.addCost = function() {
 
 
 ////////// Front-End //////////
-
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
