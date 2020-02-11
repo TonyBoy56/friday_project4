@@ -30,11 +30,6 @@ Pizza.prototype.addCost = function() {
   return this.cost;
 }
 
-Pizza.prototype.test = function() {
-  console.log("test");
-}
-
-
 ////////// Front-End //////////
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
