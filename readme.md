@@ -7,10 +7,6 @@
 ## Description
 _This is a website of my Pizza Parlor. The user is given options to choose a size of pizza, and their choice of toppings to go with it._
 
-_Link to gh-pages branch_
-
-_https://github.com/assassin56/friday_project4_
-
 _Link to github repo_
 
 _https://github.com/assassin56/friday_project4_
@@ -25,7 +21,7 @@ _https://github.com/assassin56/friday_project4_
    * Input: Upon user _click_.
    * Output: Variety of toppings are saved based on choice.
 * Selected pizza size is instantiated for the user.
-   * Input: small, memdium, large.
+   * Input: small, medium, large.
    * Output: Object for given size is created.
 * Toppings prototypes are saved onto the user's object.
   * Input: _submit_.
